@@ -83,16 +83,16 @@ var navBar = function(){
                 '</button>',
                 '<!-- LOGO -->',
                 '<!-- TEXT BASED LOGO -->',
-                '<a class="navbar-brand" href="index.html"><i class=""></i><span>JSL THAILAND</span></a>',
+                '<a class="navbar-brand" href="index-eng.html"><i class=""></i><span>JSL THAILAND</span></a>',
                 '<!-- IMG BASED LOGO  -->',
               '</div>',
               '<div id="navbar" class="navbar-collapse collapse">',
                 '<ul id="top-menu" class="nav navbar-nav navbar-right main-nav">',
-                  '<li class="active"><a href="index.html">Home</a></li>',
-                  '<li><a href="course.html">Courses</a></li>',
-                  '<li><a href="gallery.html">Gallery</a></li>',
+                  '<li class="active"><a href="index-eng.html">Home</a></li>',
+                  '<li><a href="course-eng.html">Courses</a></li>',
+                  '<li><a href="gallery-eng.html">Gallery</a></li>',
 
-                  '<li><a href="contact.html">Contact</a></li>',
+                  '<li><a href="contact-eng.html">Contact</a></li>',
 
                 '</ul>',
               '</div><!--/.nav-collapse -->',
@@ -160,17 +160,17 @@ var navBarThai = function(){
             '</button>',
             '<!-- LOGO -->',
             '<!-- TEXT BASED LOGO -->',
-            '<a class="navbar-brand" href="index-thai.html"><i class=""></i><span>JSL THAILAND</span></a>',
+            '<a class="navbar-brand" href="index.html"><i class=""></i><span>JSL ประเทศไทย</span></a>',
             '<!-- IMG BASED LOGO  -->',
             '<!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->',
           '</div>',
           '<div id="navbar" class="navbar-collapse collapse">',
             '<ul id="top-menu" class="nav navbar-nav navbar-right main-nav">',
-              '<li class="active"><a href="index-thai.html">Home</a></li>',
-              '<li><a href="course-thai.html">Courses</a></li>',
-              '<li><a href="gallery-thai.html">Gallery</a></li>',
+              '<li class="active"><a href="index.html">Home</a></li>',
+              '<li><a href="course.html">Courses</a></li>',
+              '<li><a href="gallery.html">Gallery</a></li>',
 
-              '<li><a href="contact-thai.html">Contact</a></li>',
+              '<li><a href="contact.html">Contact</a></li>',
 
             '</ul>',
           '</div><!--/.nav-collapse -->',
@@ -182,4 +182,88 @@ var navBarThai = function(){
 
           document.write(lines);
 
+}
+
+
+var footer = function(val){
+        var lines = [
+          '<footer id="mu-footer">',
+            '<!-- start footer top -->',
+            '<div class="mu-footer-top">',
+              '<div class="container">',
+                '<div class="mu-footer-top-area">',
+                  '<div class="row">',
+                    '<div class="col-lg-3 col-md-3 col-sm-3">',
+                      '<div class="mu-footer-widget">',
+                        '<h4>Information</h4>',
+                        '<ul>',
+                          '<li><a href="index.html#about-us">About Us</a></li>',
+                          '<li><a href="',val,'">Course</a></li>',
+
+                        '</ul>',
+                      '</div>',
+                    '</div>',
+
+
+                    '<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3">',
+                      '<div class="mu-footer-widget">',
+                        '<h4>Contact</h4>',
+                        '<address>',
+                                  '<p>1-1-1, Nakanishi, Urasoe-city, Okinawa pref.,</p>',
+                                  '<p>901-2125,Japan</p>',
+                                  '<p>Phone: (+81) 98-875-1456 </p>',
+                                  '<p>FAX: +81-98-875-1456</p>',
+                                  '<p>Email: askjsl@jslnippon.jp</p>',
+                        '</address>',
+                      '</div>',
+                    '</div>',
+                  '</div>',
+                '</div>',
+              '</div>',
+            '</div>',
+            '<!-- end footer top -->',
+            '<!-- start footer bottom -->',
+            '<div class="mu-footer-bottom">',
+              '<div class="container">',
+                '<div class="mu-footer-bottom-area">',
+                  '<p>&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">___</a></p>',
+                '</div>',
+              '</div>',
+            '</div>',
+            '<!-- end footer bottom -->',
+          '</footer>'
+
+        ].join(' ');
+
+        document.write(lines);
+}
+
+var lang = function(){
+
+        var lines = [
+
+          '<header id="mu-header">',
+            '<div class="container">',
+              '<div class="row">',
+                '<div class="col-lg-12 col-md-12">',
+                  '<div class="mu-header-area">',
+                    '<div class="row">',
+                      '<div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-6 col-xs-6">',
+                        '<div class="mu-header-top-left">',
+                          '<div class=" pull-right">',
+                            '<span> <a href="index.html"><span>Thai</span></a> <span>&nbsp | &nbsp</span> <a href="index-eng.html"><span>English</span></a> </span>',
+                          '</div>',
+                        '</div>',
+                      '</div>',
+
+                    '</div>',
+                  '</div>',
+                '</div>',
+              '</div>',
+            '</div>',
+          '</header>'
+
+        ].join(' ');
+
+        document.write(lines);
 }
