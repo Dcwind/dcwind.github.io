@@ -226,7 +226,7 @@ var footer = function(val){
             '<div class="mu-footer-bottom">',
               '<div class="container">',
                 '<div class="mu-footer-bottom-area">',
-                  '<p>&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">___</a></p>',
+                  '<p>&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">CE Daniel</a></p>',
                 '</div>',
               '</div>',
             '</div>',
